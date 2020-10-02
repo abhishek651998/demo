@@ -6,6 +6,7 @@ import Features from "./components/Features"
 import Details from "./components/Details"
 import Description from "./components/Description"
 import Summery from "./components/Summery"
+
 function App() {
   return (
     < >
@@ -15,6 +16,7 @@ function App() {
     <Features />
     <Details />
     <Description />
+    
    </>
   );
 }
