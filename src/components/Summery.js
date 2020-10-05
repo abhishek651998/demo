@@ -3,7 +3,7 @@ import React from "react";
 const Summery = () => {
     
     return(
-        <div style= {{ position:"absolute",right: "150px"}}>
+        <div style= {{ position:"absolute",right: "13%", maxWidth:"40%",maxHeight:"40%"}}>
         <div className="back">
         <h3>Traditional awesome super-cool cotton saree</h3> <br />
         <h2>Price <br /> <span className ="price" > &#8377;7000</span> &#8377;2000-&#8377;4500</h2> 

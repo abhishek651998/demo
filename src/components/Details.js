@@ -1,11 +1,23 @@
 import React from "react";
 
 
-const Details = () => {
+class Details extends React.Component {
+    constructor()
+    {
+        super ();
+        this.state={
+            show:false
+        }
 
+    }
+    render () {
     return(
         < div className="back">
-        <h1>Details</h1>
+        <input  type= "checkbox" onClick={()=>{this.setState({show:!this.state.show})}} />
+            <label className="text"> Details </label>
+            {
+                this.state.show ?
+            <div>
         <ul>
             <li> This product comes with something good</li>
             <li> This product doesn't comes with something bad</li>
@@ -14,9 +26,13 @@ const Details = () => {
 
 
         </ul>
+        </div> 
+        :null
+            }
         </div>
 
-    )
+    );
+    }
 }
 
 export default Details;

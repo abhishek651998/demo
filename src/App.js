@@ -6,17 +6,20 @@ import Features from "./components/Features"
 import Details from "./components/Details"
 import Description from "./components/Description"
 import Summery from "./components/Summery"
+import Footer from "./components/Footer"
+
 
 function App() {
   return (
     < >
+    
     <Background />
     <Summery />
-    <Image /> 
+    <Image name="ram" /> 
     <Features />
     <Details />
     <Description />
-    
+    <Footer />
    </>
   );
 }

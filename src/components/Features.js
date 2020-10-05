@@ -1,11 +1,23 @@
+import { render } from "@testing-library/react";
 import React from "react";
 
 
-const Features = () => {
-
+class Features extends React.Component {
+    constructor ()
+    {
+        super ();
+        this.state={
+            show:false
+        }
+    }
+    render () {
     return(
         <div className="back">
-        <h1>Features</h1>
+         <input  type= "checkbox" onClick={()=>{this.setState({show:!this.state.show})}} />
+            <label className="text"> Details </label>
+            {
+                this.state.show ?
+                <div>
         <ul>
             <li> Maecenas congue lectus ac lorem aliquet, vitae feugiat lectus blandit.</li>
             <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -23,7 +35,11 @@ const Features = () => {
             <li> Curabitur at sem efficitur, sollicitudin purus mattis, egestas an</li>
         </ul>
         </div>
+        :null
+            }
+            </div>
     );
+}
 }
 
 export default Features;
